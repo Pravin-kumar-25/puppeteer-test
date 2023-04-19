@@ -5,7 +5,7 @@ on: push
 jobs:
   puppeteer:
     name: Puppeteer run
-    runs-on: aks
+    runs-on: ubuntu-latest
     steps:
       - name: Use node version
         uses: actions/setup-node@v3
