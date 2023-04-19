@@ -5,7 +5,7 @@ const run = async function() {
 
     try {
         browser = await puppeteer.launch({
-            headless: false, slowMo: 0, ignoreHTTPSErrors: true
+            headless: true, slowMo: 0, ignoreHTTPSErrors: true
         })
         console.log("after browser")
         const page = await browser.newPage();
